@@ -189,6 +189,19 @@ public class SinglyLinkedList {
     }
     return false;
   }
+  /** 
+  Prints the list by travering the singly linked list.
+  n pointer moves to the next node with each iteration
+  **/
+   public void printlist()
+    {
+        Node n=head;
+        while(n!=null)
+        {
+            System.out.print(n.data+" ");
+            n=n.next;
+        }
+    }
 
   /**
    * Return element at special index.
@@ -214,6 +227,7 @@ public class SinglyLinkedList {
       cur = cur.next;
     }
     return joiner.toString();
+    
   }
 
   /** Driver Code */
@@ -289,4 +303,5 @@ class Node {
     this.value = value;
     this.next = next;
   }
+
 }
